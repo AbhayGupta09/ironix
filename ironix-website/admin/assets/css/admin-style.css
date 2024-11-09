@@ -1,0 +1,33 @@
+/* General table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+/* Make the table scrollable on small screens */
+.table-responsive {
+    margin-top: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;  /* For smoother scrolling on mobile */
+}
+
+/* Adjust font size on small screens (Mobile view) */
+@media (max-width: 576px) {
+    .table th, .table td {
+        font-size: 12px;  /* Reduce font size on mobile */
+        padding: 8px;  /* Reduce padding for better fit */
+    }
+
+    .table-responsive {
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling */
+        -ms-overflow-style: none;  /* Hides scrollbar in Internet Explorer */
+    }
+}

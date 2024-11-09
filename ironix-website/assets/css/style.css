@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif, ;
+    background-color: #f4f4f4;
+    color: #000000;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.navbar.fixed-top {
+    background-color: rgba(23, 21, 59, 0.251);
+    /* Primary color with transparency */
+}
+
+/* Custom styles for offcanvas */
+.offcanvas {
+
+    color: #17153B;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #fff;
+}
+
+.offcanvas-body a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.offcanvas-body a:hover {
+    color: #fff;
+}
+
+.button {
+    background-color: #17153B;
+    color: white;
+}
+
+.navbar.scrolled {
+    background-color: #17153b64;
+    /* Primary color */
+}
+
+.hero {
+    background-image: url('../images/ironix.svg');
+}
+
+
+
+@media (max-width: 767px) {
+    .hero {
+        background-image: url('../images/mobile-hero.svg');
+        /* Replace with mobile image path */
+        background-attachment: scroll;
+    }
+}
